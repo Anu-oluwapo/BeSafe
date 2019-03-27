@@ -45,4 +45,6 @@
     <string name="share_story">Share story</string>
     <string name="a_problem_shared_is_a_problem_solved">A problem shared is a problem solved</string>
     <string name="title_activity_user_profiles">UserProfiles</string>
+    <string name="events">Events</string>
+    <string name="view_events">View events</string>
 </resources>

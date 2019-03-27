@@ -179,6 +179,50 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
     </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:clipToPadding="false"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/card_share"-->
+            <!--android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_width="340dp"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:layout_margin="10dp">-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical"-->
+                <!--android:gravity="center">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="64dp"-->
+                    <!--android:layout_height="64dp"-->
+                    <!--android:background="@drawable/cerclebackgroundpurple"-->
+                    <!--android:src="@drawable/ic_people_black_24dp"-->
+                    <!--android:padding="10dp"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="@string/share_story"/>-->
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@color/lightgraay"-->
+                    <!--android:layout_margin="10dp"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/a_problem_shared_is_a_problem_solved"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:textColor="@color/cardview_dark_background"/>-->
+
+            <!--</LinearLayout>-->
     <LinearLayout
         android:clipToPadding="false"
         android:gravity="center"
@@ -186,11 +230,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <android.support.v7.widget.CardView
-            android:id="@+id/card_share"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
-            android:layout_width="340dp"
-            android:layout_height="150dp"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
             android:layout_margin="10dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -200,8 +243,8 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/cerclebackgroundpurple"
-                    android:src="@drawable/ic_people_black_24dp"
+                    android:background="@drawable/circlebackgroundgreen"
+                    android:src="@drawable/ic_people_outline_white"
                     android:padding="10dp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -224,9 +267,46 @@
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circlebackgroundblue"
+                    android:src="@drawable/ic_content_paste"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/events"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgraay"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/view_events"
+                    android:padding="5dp"
+                    android:textColor="@color/cardview_dark_background"/>
 
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
     </LinearLayout>
 
-</LinearLayout>
+    </LinearLayout>
 
 </ScrollView>
