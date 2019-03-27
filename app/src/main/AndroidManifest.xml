@@ -9,10 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".UnsafeAreas"></activity>
+        <activity android:name=".Events" />
+        <activity android:name=".WomenHeroes" />
         <activity
             android:name=".UserProfiles"
             android:label="@string/title_activity_user_profiles"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".UserListActivity"
             android:screenOrientation="portrait" />

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WomenHeroes">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle_border"
+                android:padding="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_border" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
+                    android:layout_marginLeft="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/dark"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle_border"
+                android:padding="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_border"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
+                    android:layout_marginLeft="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/dark"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle_border"
+                android:padding="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_border"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
+                    android:layout_marginLeft="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/dark"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle_border"
+                android:padding="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_border"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
+                    android:layout_marginLeft="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/dark"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle_border"
+                android:padding="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_border"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
+                    android:layout_marginLeft="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/dark"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle_border"
+                android:padding="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_border"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
+                    android:layout_marginLeft="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/dark"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle_border"
+                android:padding="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_border"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
+                    android:layout_marginLeft="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/dark"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle_border"
+                android:padding="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_border"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
+                    android:layout_marginLeft="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/dark"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
