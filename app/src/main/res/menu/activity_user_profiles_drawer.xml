@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help_outline"
+            android:title="Ask for help" />
+        <item
+            android:id="@+id/nav_campaign"
+            android:icon="@drawable/ic_people_outline"
+            android:title="Start a campaign" />
+        <item
+            android:id="@+id/nav_volunteer"
+            android:icon="@drawable/ic_mood"
+            android:title="Become a Volunteer" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_call_outline"
+            android:title="Reach out" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_person_outline"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

@@ -10,14 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".UserProfiles"
+            android:label="@string/title_activity_user_profiles"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".UserListActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".RegisterActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".LoginActivity"
-            />
+        <activity android:name=".LoginActivity" />
         <activity
             android:name=".Sharepost"
             android:label="Share Post"

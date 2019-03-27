@@ -89,6 +89,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.appCompatButtonLogin:
+                Intent intentLogin = new Intent(getApplicationContext(), UserProfiles.class);
+                startActivity(intentLogin);
                 verifyFromSQLite();
                 break;
             case R.id.textViewLinkRegister:
@@ -117,7 +119,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 , textInputEditTextPassword.getText().toString().trim())) {
 
 
-            Intent accountsIntent = new Intent(activity, UserListActivity.class);
+            Intent accountsIntent = new Intent(activity, UserProfiles.class);
             accountsIntent.putExtra("EMAIL", textInputEditTextEmail.getText().toString().trim());
             emptyInputEditText();
             startActivity(accountsIntent);
