@@ -1,10 +1,15 @@
 package com.example.besafe;
 
+import android.Manifest;
+import android.content.ClipData;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -83,11 +88,22 @@ public class UserProfiles extends AppCompatActivity
             Intent place = new Intent(UserProfiles.this, Place.class);
             startActivity(place);
         }else if (id == R.id.action_phone) {
-            Intent phone = new Intent(UserProfiles.this, Telephone.class);
-            startActivity(phone);
+            Intent callIntent = new Intent(Intent.ACTION_CALL);
+            callIntent.setData(Uri.parse("tel:112"));
+
+            if (ActivityCompat.checkSelfPermission(getApplicationContext(),
+                    Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                requestPermission();
+            }else {
+                startActivity(callIntent);
+            }
+
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    private void requestPermission(){
+        ActivityCompat.requestPermissions(UserProfiles.this, new String[]{Manifest.permission.CALL_PHONE},1);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
