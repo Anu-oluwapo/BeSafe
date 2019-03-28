@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.besafe.helpers.InputValidation;
 import com.example.besafe.model.User;
@@ -38,6 +39,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private DatabaseHelper databaseHelper;
     private User user;
 
+    public Button tool_reg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +51,15 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         initViews();
         initListeners();
         initObjects();
+
+        tool_reg = findViewById(R.id.tool_reg);
+        tool_reg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     /**

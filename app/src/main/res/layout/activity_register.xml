@@ -16,6 +16,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/tool_reg"
+            android:background="@drawable/ic_arrow_back_black_24dp"/>
+
         <android.support.v7.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
