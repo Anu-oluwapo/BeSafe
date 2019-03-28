@@ -65,6 +65,15 @@ public class Explore extends Fragment {
             }
         });
 
+        CardView eyewit = v.findViewById(R.id.eyewitness);
+        eyewit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent eyeintent = new Intent(getActivity(), Eyewitness.class);
+                startActivity(eyeintent);
+            }
+        });
+
         // Inflate the layout for this fragment
         return v;
 
