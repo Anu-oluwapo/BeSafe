@@ -47,4 +47,11 @@
     <string name="title_activity_user_profiles">UserProfiles</string>
     <string name="events">Events</string>
     <string name="view_events">View events</string>
+    <string name="nearby_police_station">Nearby Police station</string>
+    <string name="emergency_message">Tap to send emergency message</string>
+    <string name="send_emergency">Emergency Message</string>
+    <string name="emergency_calls">Tap for emergency calls</string>
+    <string name="emergency_call">Emergency Call</string>
+    <string name="custom_message">Custom Message</string>
+    <string name="create_custom_message">Create custom message</string>
 </resources>

@@ -3,7 +3,8 @@
     package="com.example.besafe">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -12,12 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Askhelp" />
         <activity
             android:name=".Telephone"
             android:label="Phone"
-            android:parentActivityName=".UserProfiles"></activity>
+            android:parentActivityName=".UserProfiles" />
         <activity
-            android:name=".Place" />
+            android:name=".Place"
+            android:label="Place" />
         <activity
             android:name=".Eyewitness"
             android:label="Eye Witnesses"

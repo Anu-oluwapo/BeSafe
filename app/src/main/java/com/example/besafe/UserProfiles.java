@@ -97,7 +97,8 @@ public class UserProfiles extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_help) {
-            // Handle the camera action
+            Intent help = new Intent(UserProfiles.this, Askhelp.class);
+            startActivity(help);
         } else if (id == R.id.nav_campaign) {
 
         } else if (id == R.id.nav_volunteer) {
