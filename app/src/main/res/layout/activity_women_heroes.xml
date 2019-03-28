@@ -22,14 +22,16 @@
                 android:orientation="horizontal"
                 android:background="@drawable/rectangle_border"
                 android:padding="10dp">
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/round_border" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/princess_diana"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
+                    android:text="Princess of Wales, married to Prince Charles. Later divorced. Known for her humanitarian and charity work."
                     android:layout_marginLeft="5dp"
                     android:paddingLeft="5dp"
                     android:textColor="@color/dark"/>
@@ -41,14 +43,16 @@
                 android:orientation="horizontal"
                 android:background="@drawable/rectangle_border"
                 android:padding="10dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/round_border"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/indira_gandhi"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
+                    android:text="Third Prime Minister of India, 1966-77 and 1980-84. Influential in shaping post-war Indian constitution and society."
                     android:layout_marginLeft="5dp"
                     android:paddingLeft="5dp"
                     android:textColor="@color/dark"/>
@@ -60,14 +64,16 @@
                 android:orientation="horizontal"
                 android:background="@drawable/rectangle_border"
                 android:padding="10dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/round_border"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/madonna"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
+                    android:text="American singer and songwriter. Often noted for her controversial lyrics and activities. Best selling female artist of all time."
                     android:layout_marginLeft="5dp"
                     android:paddingLeft="5dp"
                     android:textColor="@color/dark"/>
@@ -79,14 +85,58 @@
                 android:orientation="horizontal"
                 android:background="@drawable/rectangle_border"
                 android:padding="10dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/round_border"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/audrey_hepburn"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
+                    android:text="Actress. Voted greatest female screen legend of all time. Fashion icon and humanitarian who worked for UNICEF."
+                    android:layout_marginLeft="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/dark"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="@drawable/rectangle_border"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/marilyn_monroe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingLeft="5dp"
+                    android:text="Actress, model and icon of post-war America."
+                    android:textColor="@color/dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle_border"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/oprah_winfrey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="American media executive, actress, talk show host, television producer and philanthropist. She is best known for her talk show The Oprah Winfrey Show, which was the highest-rated television program of its kind in history."
                     android:layout_marginLeft="5dp"
                     android:paddingLeft="5dp"
                     android:textColor="@color/dark"/>
@@ -98,14 +148,16 @@
                 android:orientation="horizontal"
                 android:background="@drawable/rectangle_border"
                 android:padding="10dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/round_border"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/enid_blyton"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
+                    android:text="An English children's writer whose books have been among the world's best-sellers since the 1930s, selling more than 600 million copies. Blyton's books are still enormously popular, and have been translated into 90 languages; "
                     android:layout_marginLeft="5dp"
                     android:paddingLeft="5dp"
                     android:textColor="@color/dark"/>
@@ -117,59 +169,22 @@
                 android:orientation="horizontal"
                 android:background="@drawable/rectangle_border"
                 android:padding="10dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/round_border"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
-                    android:layout_marginLeft="5dp"
-                    android:paddingLeft="5dp"
-                    android:textColor="@color/dark"/>
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:orientation="horizontal"
-                android:background="@drawable/rectangle_border"
-                android:padding="10dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/round_border"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
-                    android:layout_marginLeft="5dp"
-                    android:paddingLeft="5dp"
-                    android:textColor="@color/dark"/>
-            </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/jane_goodall"/>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:orientation="horizontal"
-                android:background="@drawable/rectangle_border"
-                android:padding="10dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/round_border"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Praesent malesuada congue magna at finibus. In hachabitasse platea dictumst. Curabitur rhoncus auctor eleifend."
+                    android:text="Considered to be the world's foremost expert on chimpanzees, Goodall is best known for her over 55-year study of social and family interactions of wild chimpanzees since she first went to Gombe Stream National Park, Tanzania in 1960.[5] She is the founder of the Jane Goodall Institute"
                     android:layout_marginLeft="5dp"
                     android:paddingLeft="5dp"
                     android:textColor="@color/dark"/>
             </LinearLayout>
 
         </LinearLayout>
-
     </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

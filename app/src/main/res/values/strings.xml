@@ -54,4 +54,8 @@
     <string name="emergency_call">Emergency Call</string>
     <string name="custom_message">Custom Message</string>
     <string name="create_custom_message">Create custom message</string>
+    <string name="about_firstview">BeSafe is a smart android application developed to combat some of the major dangers facing women in major dangerous cities in the world.</string>
+    <string name="about_secondview">Women are exposed to eminent dangers such as kidnapping, human trafficking, domestic violence, sexual harassment and rape just to mention a few ones and they need applications like BeSafe to mitigate the risk of becoming a victim of any of this dangers. BeSafe is designed to provide immediate help to women who are feeling unsafe or in danger.</string>
+    <string name="about_thirdview">It also helps women living in dangerous cities to be safe by providing information on how to handle situations when they feel unsafe. Some sections in the application allow you to view stories of eye witnesses and heroes who has tackled unsafe situations and emerged triumphant.</string>
+    <string name="about_fourthview">BeSafe provide a means of generating alerts, registering legal cases, providing financial help, conducting campaigns for society awareness, and collaborating with on-ground volunteers. Our year-wise report features of incidents of violence and abuse in city provides vast and updated information of dangers to women in all ramifications.</string>
 </resources>

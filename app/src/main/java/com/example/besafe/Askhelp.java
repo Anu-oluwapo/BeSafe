@@ -13,11 +13,12 @@ import android.view.View;
 import android.widget.Toast;
 
 public class Askhelp extends AppCompatActivity {
-
+    String uri = "geo:0,0?q=lagos";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_askhelp);
+
         CardView custommessage = findViewById(R.id.custom_message);
         custommessage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +42,19 @@ public class Askhelp extends AppCompatActivity {
                 }
             }
 
+        });
+
+        CardView police = findViewById(R.id.police_station);
+        police.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri gmmIntentUri = Uri.parse(uri);
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                if(mapIntent.resolveActivity(getPackageManager())!= null){
+                    startActivity(mapIntent);
+                }
+            }
         });
     }
     private void requestPermission(){
