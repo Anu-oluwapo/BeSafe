@@ -79,6 +79,12 @@ public class UserProfiles extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }else if (id == R.id.action_place){
+            Intent place = new Intent(UserProfiles.this, Place.class);
+            startActivity(place);
+        }else if (id == R.id.action_phone) {
+            Intent phone = new Intent(UserProfiles.this, Telephone.class);
+            startActivity(phone);
         }
 
         return super.onOptionsItemSelected(item);

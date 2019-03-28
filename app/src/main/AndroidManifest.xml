@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.besafe">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,9 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Telephone"
+            android:label="Phone"
+            android:parentActivityName=".UserProfiles"></activity>
+        <activity
+            android:name=".Place" />
+        <activity
             android:name=".Eyewitness"
             android:label="Eye Witnesses"
-            android:parentActivityName=".MainActivity" ></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".UnsafeAreas"
             android:label="Unsafe Areas"
@@ -27,9 +36,8 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".UserProfiles"
-            android:label="@string/title_activity_user_profiles"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+            android:label="Profile"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".UserListActivity"
             android:screenOrientation="portrait" />
@@ -51,7 +59,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".OnLoad"
-            android:noHistory="true" >
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
