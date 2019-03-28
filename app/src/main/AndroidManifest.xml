@@ -9,9 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UnsafeAreas"></activity>
-        <activity android:name=".Events" />
-        <activity android:name=".WomenHeroes" />
+        <activity
+            android:name=".UnsafeAreas"
+            android:label="Unsafe Areas"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".Events"
+            android:label="Events"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".WomenHeroes"
+            android:label="Women Heroes"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".UserProfiles"
             android:label="@string/title_activity_user_profiles"
