@@ -86,7 +86,9 @@ public class Contact extends AppCompatActivity
             startActivity(home);
         } else if (id == R.id.nav_home) {
 
-        } else if (id == R.id.nav_events) {
+        } else if (id == R.id.nav_volunteer) {
+            Intent volunteer =new Intent(Contact.this, volunteer.class);
+            startActivity(volunteer);
 
         } else if (id == R.id.nav_register) {
             Intent register = new Intent(Contact.this, RegisterActivity.class);

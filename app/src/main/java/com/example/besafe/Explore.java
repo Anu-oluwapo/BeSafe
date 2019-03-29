@@ -74,6 +74,15 @@ public class Explore extends Fragment {
             }
         });
 
+        CardView donate = v.findViewById(R.id.donate);
+        donate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent donateintent = new Intent(getActivity(), Donate.class);
+                startActivity(donateintent);
+            }
+        });
+
         // Inflate the layout for this fragment
         return v;
 

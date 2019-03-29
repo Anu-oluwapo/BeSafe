@@ -118,6 +118,8 @@ public class UserProfiles extends AppCompatActivity
         } else if (id == R.id.nav_campaign) {
 
         } else if (id == R.id.nav_volunteer) {
+            Intent volunteer =new Intent(UserProfiles.this, volunteer.class);
+            startActivity(volunteer);
 
         } else if (id == R.id.nav_contact) {
             Intent contact = new Intent(UserProfiles.this, Contact.class);

@@ -14,16 +14,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".volunteer"
+            android:label="Volunteer"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".Donate"
+            android:label="Donate"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
             android:name=".Askhelp"
             android:label="Ask for help"
-            android:parentActivityName=".UserProfiles"/>
+            android:parentActivityName=".UserProfiles" />
         <activity
             android:name=".Telephone"
             android:label="Phone"
             android:parentActivityName=".UserProfiles" />
         <activity
             android:name=".Place"
-            android:label="Place" />
+            android:label="Place"
+            android:parentActivityName=".UserProfiles"/>
         <activity
             android:name=".Eyewitness"
             android:label="Eye Witnesses"
@@ -53,7 +63,7 @@
         <activity
             android:name=".LoginActivity"
             android:label="Login"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Sharepost"
             android:label="Share Post"
