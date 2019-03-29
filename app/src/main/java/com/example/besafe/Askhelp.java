@@ -56,6 +56,14 @@ public class Askhelp extends AppCompatActivity {
                 }
             }
         });
+
+        CardView emergencymesg = findViewById(R.id.emergency_message);
+        emergencymesg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendEmergencySMS();
+            }
+        });
     }
     private void requestPermission(){
         ActivityCompat.requestPermissions(Askhelp.this, new String[]{Manifest.permission.CALL_PHONE},1);
@@ -69,6 +77,27 @@ public class Askhelp extends AppCompatActivity {
         smsIntent.setType("vnd.android-dir/mms-sms");
         smsIntent.putExtra("address"  , new String ("112"));
         smsIntent.putExtra("sms_body"  , " ");
+
+        try {
+            startActivity(smsIntent);
+            finish();
+            Log.i("Finished sending SMS...", "");
+        } catch (android.content.ActivityNotFoundException ex) {
+            Toast.makeText(Askhelp.this,
+                    "SMS failed, please try again later.", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    protected void sendEmergencySMS() {
+        Log.i("Send SMS", "");
+        Intent smsIntent = new Intent(Intent.ACTION_VIEW);
+
+        smsIntent.setData(Uri.parse("smsto:"));
+        smsIntent.setType("vnd.android-dir/mms-sms");
+        smsIntent.putExtra("address"  , new String ("112"));
+        smsIntent.putExtra("sms_body"  , "Location: Latitude (19.120550), Longitude (72.875470)\n" +
+                " 9th March 2019, 10 AM \n " +
+                "User USR90016 Please Help, It’s an Emergency. ");
 
         try {
             startActivity(smsIntent);
