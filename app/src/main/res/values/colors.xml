@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#1d69d2</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#1d69d2</color>
+    <color name="colorAccent">#1D69D2</color>
     <color name="colorTextHint">#51d</color>
 
     <color name="lightgraay">#ededed</color>
@@ -14,9 +14,13 @@
     <color name="deepblue">#010CC8</color>
     <color name="white">#ffffff</color>
 
-    <color name="ashLight">#efefef</color>
+    <color name="ashLight">#EFEFEF</color>
     <color name="ashLightTest">#b9b9b9</color>
      <color name="ashDark">#7c7c7c</color>
     <color name="dark">#000000</color>
     <color name="light">#ffffff</color>
+    <color name="peach">#FFDAB9</color>
+    <color name="pink">	#FFB6C1</color>
+    <color name="lavender">#FFF0F5</color>
+    <color name="coral">#F08080</color>
 </resources>
