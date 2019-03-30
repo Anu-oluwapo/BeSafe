@@ -10,8 +10,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class Sharepost extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+import com.example.besafe.model.User;
 
+public class Sharepost extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+User user;
     Spinner spinner;
     String[] postname = {"Sexual Harrasment", "Domestic violence", "Eve-teasing", "Stalking"};
 

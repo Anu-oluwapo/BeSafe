@@ -11,7 +11,8 @@
 
 
     <string name="text_accounts">All Accounts</string>
-    <string name="hint_name">Name</string>
+    <string name="hint_firstname">First Name</string>
+    <string name="hint_lastname">Last Name</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="hint_confirm_password">Confirm Password</string>

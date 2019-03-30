@@ -2,9 +2,21 @@ package com.example.besafe.model;
 
 public class User {
     private int id;
-    private String name;
+    private String firstname;
+    private String lastname;
     private String email;
     private String password;
+
+    public String getStories() {
+        return stories;
+    }
+
+    public void setStories(String stories) {
+        this.stories = stories;
+    }
+
+    private String stories;
+
 
     public int getId() {
         return id;
@@ -14,12 +26,20 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
     public String getEmail() {

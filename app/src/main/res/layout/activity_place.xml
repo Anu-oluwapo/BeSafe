@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:textAlignment="center"
-            android:text="Displays in map whatever you type that is NEAR YOU"
+            android:text="In need for direction?"
            />
 
         <EditText

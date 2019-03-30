@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
+import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 
@@ -47,7 +49,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intent);
             }
         });
-        getSupportActionBar().hide();
 
         initViews();
         initListeners();
@@ -99,9 +100,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.appCompatButtonLogin:
+                if (!isValididated()){
+                    return;
+                }
                 verifyFromSQLite();
-                Intent intentLogin = new Intent(getApplicationContext(), UserProfiles.class);
-                startActivity(intentLogin);
+                startActivity(new Intent(getApplicationContext(),UserProfiles.class));
 
                 break;
             case R.id.textViewLinkRegister:
@@ -110,6 +113,36 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intentRegister);
                 break;
         }
+    }
+
+    public boolean isValididated(){
+        boolean isvalid=true;
+        String email=textInputEditTextEmail.getText().toString().trim();
+        String pass=textInputEditTextPassword.getText().toString().trim();
+
+        if (TextUtils.isEmpty(email)){
+            isvalid=false;
+            textInputLayoutEmail.setError("enter email address");
+            textInputEditTextEmail.setText(null);
+
+        }else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            textInputLayoutEmail.setError("invalid email");
+            textInputLayoutEmail.setHelperText("abc@example.com");
+            isvalid=false;
+        }else{
+            textInputEditTextEmail.setText(null);
+        }
+
+        if (TextUtils.isEmpty(pass)){
+            isvalid=false;
+            textInputLayoutPassword.setError("password must be provided");
+
+        }else{
+            textInputEditTextPassword.setText(null);
+        }
+
+
+        return isvalid;
     }
 
     /**

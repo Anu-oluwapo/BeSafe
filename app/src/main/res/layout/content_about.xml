@@ -21,27 +21,27 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/about_firstview"
-        android:textSize="15sp"/>
+        android:textSize="25sp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/about_secondview"
-        android:textSize="15sp" />
+        android:textSize="25sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:textSize="15sp"
+        android:textSize="25sp"
         android:text="@string/about_thirdview"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:textSize="15sp"
+        android:textSize="25sp"
         android:text="@string/about_fourthview"/>
 
 

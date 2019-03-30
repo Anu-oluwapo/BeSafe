@@ -24,14 +24,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     // User Table Columns names
     private static final String COLUMN_USER_ID = "user_id";
-    private static final String COLUMN_USER_NAME = "user_name";
+    private static final String COLUMN_USER_FIRST_NAME = "user_firstname";
+    private static final String COLUMN_USER_LAST_NAME = "user_lastname";
+    private static final String COLUMN_USER_STORIES = "user_stories";
     private static final String COLUMN_USER_EMAIL = "user_email";
     private static final String COLUMN_USER_PASSWORD = "user_password";
 
+
     // create table sql query
     private String CREATE_USER_TABLE = "CREATE TABLE " + TABLE_USER + "("
-            + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_USER_NAME + " TEXT,"
-            + COLUMN_USER_EMAIL + " TEXT," + COLUMN_USER_PASSWORD + " TEXT" + ")";
+            + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_USER_FIRST_NAME + " TEXT," + COLUMN_USER_LAST_NAME + " TEXT,"
+           +COLUMN_USER_STORIES+"TEXT" + COLUMN_USER_EMAIL + " TEXT," + COLUMN_USER_PASSWORD + " TEXT" + ")";
 
     // drop table sql query
     private String DROP_USER_TABLE = "DROP TABLE IF EXISTS " + TABLE_USER;
@@ -72,9 +75,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(COLUMN_USER_NAME, user.getName());
+        values.put(COLUMN_USER_FIRST_NAME, user.getFirstname());
+        values.put(COLUMN_USER_LAST_NAME, user.getLastname());
         values.put(COLUMN_USER_EMAIL, user.getEmail());
         values.put(COLUMN_USER_PASSWORD, user.getPassword());
+        values.put(COLUMN_USER_STORIES,user.getStories());
 
         // Inserting Row
         db.insert(TABLE_USER, null, values);
@@ -91,12 +96,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String[] columns = {
                 COLUMN_USER_ID,
                 COLUMN_USER_EMAIL,
-                COLUMN_USER_NAME,
-                COLUMN_USER_PASSWORD
+                COLUMN_USER_FIRST_NAME,
+                COLUMN_USER_LAST_NAME,
+                COLUMN_USER_PASSWORD,
+                COLUMN_USER_STORIES
+
         };
         // sorting orders
         String sortOrder =
-                COLUMN_USER_NAME + " ASC";
+                COLUMN_USER_FIRST_NAME + " ASC";
         List<User> userList = new ArrayList<User>();
 
         SQLiteDatabase db = this.getReadableDatabase();
@@ -121,7 +129,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             do {
                 User user = new User();
                 user.setId(Integer.parseInt(cursor.getString(cursor.getColumnIndex(COLUMN_USER_ID))));
-                user.setName(cursor.getString(cursor.getColumnIndex(COLUMN_USER_NAME)));
+                user.setFirstname(cursor.getString(cursor.getColumnIndex(COLUMN_USER_FIRST_NAME)));
+                user.setLastname(cursor.getString(cursor.getColumnIndex(COLUMN_USER_LAST_NAME)));
                 user.setEmail(cursor.getString(cursor.getColumnIndex(COLUMN_USER_EMAIL)));
                 user.setPassword(cursor.getString(cursor.getColumnIndex(COLUMN_USER_PASSWORD)));
                 // Adding user record to list
@@ -144,7 +153,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(COLUMN_USER_NAME, user.getName());
+        values.put(COLUMN_USER_FIRST_NAME, user.getFirstname());
+        values.put(COLUMN_USER_LAST_NAME, user.getFirstname());
         values.put(COLUMN_USER_EMAIL, user.getEmail());
         values.put(COLUMN_USER_PASSWORD, user.getPassword());
 
